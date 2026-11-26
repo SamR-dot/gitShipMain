@@ -41,7 +41,6 @@ boolean atWarp;
 boolean showDialogue;
 
 Star[] stars = new Star[400];
-Planet earth;
 Person person;
 Checksum healthbar;
 Junk junk;
@@ -70,8 +69,6 @@ void draw(){
      stars[i].display();
     }
     //location
-     earth.update();
-     earth.display();
   
     //viewscreen
     if(showDialogue){
@@ -113,7 +110,6 @@ void init(){
     println(item);
   }
   //location
-  earth = new Planet(2*width/3, height/4, 50);
   //dialogue
   person = new Person();
   //junk
